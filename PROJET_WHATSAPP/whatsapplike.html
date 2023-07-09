@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF 8"/>
+    <link rel="stylesheet" type="text/css" href="whatsapplike.css">
+    <title>whatsapplike</title>
+</head>
+<body onload="pg_db()">
+    <nav>
+        <div name="connexion" onclick="afficher(connexion)">Se connecter</div>
+        <div name="contact" onclick="afficher(liste_contacts)">Contacts</div>
+        <div name="ajouter" onclick="afficher(ajout)">ajout</div>
+    </nav> 
+    <div id="div_cont"></div>
+    <div id="div_conx" class="centre">
+            <input type="text" id="identifiant" placeholder="b58173a0f10a8acd21f73280f87006fcb11a5b66aa3433a902172d86a1ede31a"><br>
+        <button onclick="charger()">S'identifier</button>
+    </div>
+    <div id="div_ajout" class="centre">
+        <input type="email" id="inp_mail" placeholder="saellaplume@gmail.com" size="30" required>
+        <button onclick="ajouter()">ajouter</button>
+    </div>
+   
+</body>    
+<script src="whatsapplike.js"></script>
+</html>

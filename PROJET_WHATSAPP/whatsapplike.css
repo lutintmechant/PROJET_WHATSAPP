@@ -1,0 +1,414 @@
+nav
+{
+	height:4.8em;
+	margin: -10px;
+	display:block;
+	flex-direction:row;
+    background: rgb(51, 13, 95);
+    border:2px solid rgb(142, 98, 153);
+}
+
+nav div {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex:auto;
+    font-size:1.2em;
+    color:rgb(169, 88, 216);
+    border:2px solid rgb(142, 98, 153);
+	text-decoration: none;
+  	text-transform: uppercase; 
+  	
+    
+    
+}
+
+nav div:hover{
+	background-color:rgb(68, 22, 95);
+    background:rgb(161, 76, 179);
+	transition:background-color 2s linear;
+	color:black;
+	transition:color 1s linear;
+    animation: myAnim1 2s ease 0s 1 normal forwards;
+}
+#div_conx
+{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.centre
+{   
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+#div_cont
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2% 0;
+    width: 100%;
+}
+
+
+
+
+
+#div_ajout
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 90px;
+    align-items: center;
+}
+
+
+#but_cont
+{ 
+    width: 100%;
+    display: flex;
+     
+    justify-content: center;
+    flex-direction: column;
+   
+   
+}
+
+#boutton_supprimer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact
+{
+    color:rgb(74, 21, 105);
+    border:2px solid rgb(142, 98, 153);
+    background:rgb(238, 167, 245);
+    vertical-align:middle;
+    padding: 40px;
+    text-align: center;
+    margin: 2px;
+    border-radius: 8px;
+    font-size:1.2em;
+  	text-transform: uppercase; 
+    animation: myAnim2 1s ease 0s 1 normal forwards;
+  	
+}
+
+.supp
+{
+    color:#000000;
+    border:1px solid #201f1f;
+    background:rgb(52, 34, 100);
+    text-align: center;
+    vertical-align:middle;
+    margin: 2px; 
+    padding: 40px;
+    border-radius: 8px;
+    height: 100%;
+    font-size:1.2em;
+  	text-transform: uppercase; 
+    
+  	
+}
+
+.z_txt
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2% 0;
+}
+
+.zone_decris
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow:scroll;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+input
+{
+    font-size: 20px;
+    padding: 1em 112px;
+    border-radius: 3px;
+    animation: myAnim2 2s ease 0s 1 normal forwards;
+    
+}
+
+.ligne_dec input
+{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right : 6%;
+    border-radius: 3px;
+}
+.ligne_dec
+{
+    display: flex;
+    width: 70%;
+    
+}
+
+button,
+button::after {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+button {
+      background:rgb(224, 145, 240); ;
+      border: 5px solid #000000;
+      border-radius: 2px;
+      
+      color: #4b267c;
+      display: block;
+      font-size: 1.6em;
+      font-weight: bold;
+      margin: 10px auto;
+      padding: 2em 6em;
+      position: relative;
+      text-transform: uppercase;
+      
+}
+    button::before,
+    button::after {
+      background: #411e81;
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    button:hover {
+      color: #cc53e4;
+      animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+
+
+.ligne_dec button
+{
+    color:#3e3c3c;
+    border:5px solid #060505;
+    background:rgb(92, 33, 119);
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.5);
+    cursor:pointer;
+    vertical-align:middle;
+    padding: 10px;
+    text-align: center;
+    margin: 15px;
+    border-radius: 8px;
+    height: 80%;
+    font-size:1.2em;
+  	text-transform: uppercase; 
+  	font-variant: small-caps;
+    border-radius: 5px;
+    
+}
+
+#nom_utili
+{
+    font-size:1.2em;
+  	text-transform: uppercase; 
+  	font-variant: small-caps;
+    background-color: #0f0e0e;
+    color: rgb(191, 3, 243);
+    vertical-align:middle;
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.message
+{
+    color:#ec7272;
+    padding: 15px;
+    margin: 1%;
+    font-size:20px;
+    width: 87%;
+    border-radius: 5px;
+}
+
+.utilisateur
+{
+    background-color:#422479;
+    text-align: right;
+    animation: myAnim6 1s ease 0s 1 normal forwards;
+}
+
+.uti
+{
+    background-color: rgb(104, 68, 112);
+    text-align: left;
+    animation: myAnim5 2s ease 0s 1 normal forwards;
+}
+
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
+@keyframes myAnim1 {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes myAnim2 {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+@keyframes myAnim3 {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes myAnim4 {
+	0% {
+		background-position: center bottom;
+		background-size: 100%;
+	}
+
+	100% {
+		background-position: center bottom;
+		background-size: 150%;
+	}
+}
+@keyframes myAnim5 {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@keyframes myAnim6 {
+	0% {
+		transform: scaleY(0.4);
+	}
+
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+body 
+{ 
+    background-image: url("waifu.jpg");
+    background-size: cover;
+    
+   
+}
